@@ -1,0 +1,8 @@
+java_test(
+	name = "rectangle_test",
+	srcs = glob(['*Test.java']),
+	deps = [
+		'//java/com/ashish/shape/:shape_lib',
+		'//java/lib/:junit',
+	],
+)
