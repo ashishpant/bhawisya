@@ -1,0 +1,5 @@
+java_library(
+	name = "shape_lib",
+	srcs = glob(['*.java']),
+	visibility = ['PUBLIC'],
+)

@@ -1,0 +1,13 @@
+java_library(
+	name = 'main',
+	srcs = glob(['*.java']),
+	deps = [ '//java/com/ashish/shape/:shape_lib', ],
+)
+
+java_binary(
+	name = 'runner',
+	deps = [
+		':main'
+	],
+	main_class = 'com.ashish.Main',
+)
