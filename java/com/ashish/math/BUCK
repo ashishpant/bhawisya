@@ -1,0 +1,13 @@
+java_library(
+	name = "math_lib",
+	srcs = glob(['*.java']),
+	visibility = ['PUBLIC'],
+)
+
+java_binary(
+	name = 'runner',
+	deps = [
+		':math_lib'
+	],
+	main_class = 'com.ashish.math.MathExperiments',
+)

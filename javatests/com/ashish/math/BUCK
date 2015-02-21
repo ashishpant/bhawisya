@@ -1,0 +1,8 @@
+java_test(
+	name = "math_test",
+	srcs = glob(['*Test.java']),
+	deps = [
+		'//java/com/ashish/math/:math_lib',
+		'//java/lib/:junit',
+	],
+)
